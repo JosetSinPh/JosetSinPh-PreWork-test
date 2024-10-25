@@ -41,7 +41,8 @@ Pregunta 7: ✅
 a) space-between distribuye los elementos con espacios iguales entre ellos, dejando sin espacio los bordes del contenedor, 
    mientras que space-around agrega espacio igual entre los elementos y en los bordes del contenedor.
 
-b) space-between coloca los elementos en los bordes del contenedor, mientras que space-around coloca los elementos solo en el centro del contenedor. 
+b) space-between coloca los elementos con espacio igual entre ellos, mientras que space-around distribuye el espacio uniformemente 
+   tanto entre los elementos como en los bordes
 
 
 Pregunta 8: ✅
