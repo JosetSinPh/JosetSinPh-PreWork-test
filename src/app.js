@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 /*
 para ver en la terminal lo que estes imprimiendo en consola usa -> node src/app.js
 <------------------------- INICIO SELECCION SIMPLE -------------------------->
