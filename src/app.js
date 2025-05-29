@@ -140,20 +140,19 @@ D) Error
 
   // a) Elimina todos los elementos que sean "trampa" (usa un método que filtre el arreglo). 
   //    almacena el arreglo filtrado en una variable llamada inventarioSinTrampa (NO MODIFIQUES el arreglo original).
-  // b) Agrega "super estrella" al final del inventario. (debes modificar el arreglo original)
-  // c) Recorre el inventario y convierte todos los nombres en mayúsculas (usa un método que transforme), para convertir un string en mayusculas puedes usar string.toUpperCase()
+  // b) Agrega "super estrella" al final del inventarioSinTrampas. (debes modificar el arreglo inventarioSinTrampas)
+  // c) Recorre el inventarioSinTrampas y convierte todos los nombres en mayúsculas (usa un método que transforme), para convertir un string en mayusculas puedes usar string.toUpperCase()
   //    ejemplo "hongo".toUpperCase()  ---> "HONGO"
-  //    el resultado almacenalo en una variable llamada inventarioEnMayusculas. (no modifiques el arreglo original)
-  // d) Usa desestructuración para extraer los dos primeros objetos y guardarlos en variables llamadas primerItem y segundoItem.
+  //    el resultado almacenalo en una variable llamada inventarioEnMayusculas. (no modifiques el arregloSinTrampas)
+  // d) Usa desestructuración para extraer los dos primeros elementos del inventarioEnMayusculas y guardarlos en variables llamadas primerItem y segundoItem.
 
   //write your code here
   
   
 
   // Pregunta 15:
-  // Usa un bucle para recorrer el inventario e imprime mensajes personalizados para cada objeto
   // Usando el mismo arreglo de inventario anterior (el original, no los modificados). 
-  // Usa un for o for...of para recorrer el inventario.
+  // Usa un bucle for o for...of para recorrer el inventario e imprime mensajes personalizados para cada objeto
   // Si el objeto es "trampa", imprime: "¡Cuidado! Hay una trampa"
   // Si el objeto es "estrella", imprime: "¡Una estrella! Usar en caso de emergencia"
   // Para cualquier otro objeto, imprime: "Mario tiene un(a) [nombre del objeto]."
