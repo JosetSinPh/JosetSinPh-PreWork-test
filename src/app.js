@@ -1,9 +1,5 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
 /*
-
+para ver en la terminal lo que estes imprimiendo en consola usa -> node src/app.js
 <------------------------- INICIO SELECCION SIMPLE -------------------------->
 Pregunta 1: ✅
 ¿Cuál es la etiqueta correcta para insertar una imagen en HTML?
@@ -46,73 +42,84 @@ b) space-between coloca los elementos con espacio igual entre ellos, mientras qu
 
 
 Pregunta 8: ✅
-Dado los siguientes datos:
-let numero = "45";
-let numeroConvertido = parseInt(numero);
-
-Cual es el resultado de ejecutar un typeof numeroConvertido
-
-a) "string"
-b) "number"
-c) NaN
-d) "boolean"
-
-Pregunta 9: ✅
 Dado el arreglo:
-const frutas = ["manzana", "banana", "naranja"];
-Que sucede si ejecutamos frutas.push("pera");
+const powerUps = ["Hongo", "Flor", "Estrella"];
+Que sucede si ejecutamos powerUps.push("Hoja");
 
 
 a) Se muestra un error porque el arreglo no puede modificarse.
-b) Se agrega "pera" al inicio del arreglo.
-c) Se agrega "pera" al final del arreglo.
-d) Se elimina "pera" del arreglo.
+b) Se agrega "Hoja" al inicio del arreglo.
+c) Se agrega "Hoja" al final del arreglo.
+d) Se elimina "Hoja" del arreglo.
+
+
+Pregunta 9: ✅
+Que hara el siguiente bloque de codigo?
+const mario = {
+  derrotoABowser: true,
+  nivelActual: "castillo final"
+};
+
+const rescatarAPeach = () => {
+  if (mario.derrotoABowser && mario.nivelActual === "castillo final") {
+    return "¡Mario rescató a Peach!";
+  } else {
+    return "No puedes rescatar a Peach todavía.";
+  }
+};
+
+rescatarAPeach();
+
+a) "¡Mario rescató a Peach!"
+b) "No puedes rescatar a Peach todavía."
+c) true
+d) "castillo final"
 
 Pregunta 10: ✅
-si tenemos:
-const frutas = ["manzana", "banana", "naranja"];
-Cual seria el resultado de hacer frutas.pop();
+¿Qué hace esta función?
+function brincar() {
+  console.log("¡Mario brincó!");
+}
+brincar();
 
-a) ["manzana", "banana"]
-b) ["manzana", "naranja"]
-c) ["banana", "naranja"]
-d) ["manzana", "banana", "naranja"]
+A) Muestra un error
+B) Muestra "Mario brincó!"
+C) No hace nada
+D) Declara una variable
+
+
 
 
 Pregunta 11: ✅
-Si tenemos:
-const saludo = "HOLA mundo";
-Y ejecutamos saludo.toLowerCase()
+¿Qué hace .map()?
 
-Cual sera el resultado?
-a) "HOLA mundo"
-b) "Hola mundo"
-c) "hola mundo"
-d) undefined
+A) Filtra elementos
+B) Modifica el arreglo original
+C) Devuelve un nuevo arreglo transformado
+D) Busca un elemento
+
+
 
 Pregunta 12: ✅
-Que hara el siguiente bloque de codigo?
-const pepito = {
-  edad: 23,
-  nacionalidad: "Pepitolandia",
-  pasaporte: false,
-  visa: true
-};
+¿Qué hace el operador ... en este ejemplo?
+const base = { nombre: "Toad", rol: "Soporte" };
+const copia = { ...base, nivel: 5 };
 
-const quePuedeHacer = () => {
-  if (david.pasaporte || david.visa) {
-    return("Puedes viajar");
-  } else {
-    return("No puedes viajar");
-  }
-};
-quePuedeHacer();
+A) Borra las propiedades
+B) Copia el objeto base
+C) Suma dos objetos
+D) Crea un array
 
-opciones:
-a) Devolvera "No puedes viajar".
-b) Devolvera "Puedes viajar".
-c) Devolvera un error de sintaxis.
-d) No Devolvera nada.
+
+
+Pregunta 13: ✅
+¿Qué imprime este código?
+const { nombre } = { nombre: "Peach", rol: "Líder" };
+console.log(nombre);
+A) undefined
+B) Peach
+C) rol
+D) Error
 
 
 
@@ -122,28 +129,29 @@ d) No Devolvera nada.
 
 //----------------------- PARTE PRACTICA -----------------------------
 
-window.onload = function() {
-  // Pregunta 13:
-  /* Usando el siguiente arreglo:
-  let frutas = ["manzana", "banana", "naranja", "piña"];
-  Y con los conocimientos obtenidos en estas ultimas dos semanas.
-  Imprime en consola el resultado de los siguientes pasos (debes por cada paso hacer un console.log para
-  mostrar el resultado)
-  a) Agrega "mango" al final del arreglo.
-  b) Elimina el primer elemento.
-  c) Reemplaza "naranja" con "kiwi". */
+
+  //Pregunta 14:
+  // Bowser ha dejado trampas en el inventario
+  // Usando el siguiente arreglo:
+  let inventario = ["hongo", "flor", "trampa", "estrella", "trampa", "pluma"];
+  //Objetivo: Ayuda a Mario a preparar su mochila para la misión final. Realiza los siguientes pasos (haz un console.log después de cada uno):
+  // a) Elimina todos los elementos que sean "trampa" (usa un método que filtre el arreglo).
+  // b) Agrega "super estrella" al final del inventario.
+  // c) Recorre el inventario y convierte todos los nombres en mayúsculas (usa un método que transforme), para convertir un string en mayusculas puedes usar string.toUpperCase()
+  //    ejemplo "hongo".toUpperCase()  ---> "HONGO"
+  // d) Usa desestructuración para extraer los dos primeros objetos y guardarlos en variables llamadas primerItem y segundoItem.
 
   //write your code here
+  
+  
 
-  // Pregunta 14:
-  /*Escribe una función en JavaScript que ordene un arreglo de números de menor a mayor sin utilizar métodos de arreglo como sort. 
-  Puedes usar bucles y condicionales básicos.*/
+  // Pregunta 15:
+  // Usa un bucle para recorrer el inventario e imprime mensajes personalizados para cada objeto
+  // Usando el mismo arreglo de inventario anterior. 
+  // Usa un for o for...of para recorrer el inventario.
+  // Si el objeto es "trampa", imprime: "¡Cuidado! Hay una trampa"
+  // Si el objeto es "estrella", imprime: "¡Una estrella! Usar en caso de emergencia"
+  // Para cualquier otro objeto, imprime: "Mario tiene un(a) [nombre del objeto]."
 
-  let numeros = [5, 3, 8, 4, 2];
-  function bubbleSort(arr) {
-    //write your code here
-    return;
-  }
 
-  console.log(bubbleSort(numeros)); // [2, 3, 4, 5, 8]
-};
+  //write your code here
