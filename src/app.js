@@ -131,31 +131,38 @@ D) Error
 
 //----------------------- PARTE PRACTICA -----------------------------
 
+//Pregunta 14:
+// Bowser ha dejado trampas en el inventario
+// Usando el siguiente arreglo:
+let inventario = ["hongo", "flor", "trampa", "estrella", "trampa", "pluma"];
+//Objetivo: Ayuda a Mario a preparar su mochila para la misión final. Realiza los siguientes pasos (haz un console.log después de cada uno):
 
-  //Pregunta 14:
-  // Bowser ha dejado trampas en el inventario
-  // Usando el siguiente arreglo:
-  let inventario = ["hongo", "flor", "trampa", "estrella", "trampa", "pluma"];
-  //Objetivo: Ayuda a Mario a preparar su mochila para la misión final. Realiza los siguientes pasos (haz un console.log después de cada uno):
+// a) Elimina todos los elementos que sean "trampa" (usa un método que filtre el arreglo).
+//    almacena el arreglo filtrado en una variable llamada inventarioSinTrampa (NO MODIFIQUES el arreglo original).
+// b) Agrega "super estrella" al final del inventarioSinTrampas. (debes modificar el arreglo inventarioSinTrampas)
+// c) Recorre el inventarioSinTrampas y convierte todos los nombres en mayúsculas (usa un método que transforme), para convertir un string en mayusculas puedes usar string.toUpperCase()
+//    ejemplo "hongo".toUpperCase()  ---> "HONGO"
+//    el resultado almacenalo en una variable llamada inventarioEnMayusculas. (no modifiques el arregloSinTrampas)
+// d) Usa desestructuración para extraer los dos primeros elementos del inventarioEnMayusculas y guardarlos en variables llamadas primerItem y segundoItem.
 
-  // a) Elimina todos los elementos que sean "trampa" (usa un método que filtre el arreglo). 
-  //    almacena el arreglo filtrado en una variable llamada inventarioSinTrampa (NO MODIFIQUES el arreglo original).
-  // b) Agrega "super estrella" al final del inventarioSinTrampas. (debes modificar el arreglo inventarioSinTrampas)
-  // c) Recorre el inventarioSinTrampas y convierte todos los nombres en mayúsculas (usa un método que transforme), para convertir un string en mayusculas puedes usar string.toUpperCase()
-  //    ejemplo "hongo".toUpperCase()  ---> "HONGO"
-  //    el resultado almacenalo en una variable llamada inventarioEnMayusculas. (no modifiques el arregloSinTrampas)
-  // d) Usa desestructuración para extraer los dos primeros elementos del inventarioEnMayusculas y guardarlos en variables llamadas primerItem y segundoItem.
+//write your code here
 
-  //write your code here
-  
-  
+inventarioSinTrampas.push("super estrella");
 
-  // Pregunta 15:
-  // Usando el mismo arreglo de inventario anterior (el original, no los modificados). 
-  // Usa un bucle for o for...of para recorrer el inventario e imprime mensajes personalizados para cada objeto
-  // Si el objeto es "trampa", imprime: "¡Cuidado! Hay una trampa"
-  // Si el objeto es "estrella", imprime: "¡Una estrella! Usar en caso de emergencia"
-  // Para cualquier otro objeto, imprime: "Mario tiene un(a) [nombre del objeto]."
+// Pregunta 15:
+// Usando el mismo arreglo de inventario anterior (el original, no los modificados).
+// Usa un bucle for o for...of para recorrer el inventario e imprime mensajes personalizados para cada objeto
+// Si el objeto es "trampa", imprime: "¡Cuidado! Hay una trampa"
+// Si el objeto es "estrella", imprime: "¡Una estrella! Usar en caso de emergencia"
+// Para cualquier otro objeto, imprime: "Mario tiene un(a) [nombre del objeto]."
 
-
-  //write your code here
+//write your code here
+for (const elemento of inventario) {
+  if (elemento === "trampa") {
+    console.log("¡Cuidado! Hay una trampa");
+  } else if (elemento === "estrella") {
+    console.log("¡Una estrella! Usar en caso de emergencia");
+  } else {
+    console.log(`Mario tiene un(a) ${elemento}`);
+  }
+}
